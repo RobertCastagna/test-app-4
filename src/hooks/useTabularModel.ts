@@ -14,6 +14,7 @@ export function useTabularModel(): UseTabularModelResult {
   const setError = useModelStore((s) => s.setError);
 
   const mod = useExecutorchModule({
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     modelSource: require("../../assets/models/mlp.pte"),
   });
 

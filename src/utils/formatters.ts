@@ -26,7 +26,7 @@ export function formatTimeShort(iso: string): string {
   return d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
 }
 
-export function brierScore(predictions: Array<{ prob: number; outcome: 0 | 1 }>): number {
+export function brierScore(predictions: { prob: number; outcome: 0 | 1 }[]): number {
   if (predictions.length === 0) return 0;
   const total = predictions.reduce((acc, p) => {
     const diff = p.prob - p.outcome;
