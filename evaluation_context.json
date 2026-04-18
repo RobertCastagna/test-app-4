@@ -1,83 +1,85 @@
 {
   "project_structure": [
-    "tsconfig.json",
-    "global.css",
-    "README.md",
-    "eas.json",
-    "app.config.ts",
-    "package-lock.json",
-    "tailwind.config.js",
-    "vitest.config.ts",
-    ".gitignore",
-    "package.json",
-    "BUILD.md",
-    "eslint.config.js",
-    "metro.config.js",
     ".env.example",
+    "vitest.config.ts",
+    "app.config.ts",
+    ".gitignore",
+    "tailwind.config.js",
+    "global.css",
+    "eas.json",
     "evaluation_context.json",
-    "babel.config.js",
-    "app.json",
+    "package-lock.json",
+    "eslint.config.js",
     "nativewind-env.d.ts",
-    ".vscode/extensions.json",
-    ".vscode/settings.json",
-    "assets/icon.png",
-    "assets/images/splash-icon.png",
-    "assets/images/android-icon-foreground.png",
-    "assets/images/react-logo@2x.png",
-    "assets/images/favicon.png",
-    "assets/images/partial-react-logo.png",
-    "assets/images/react-logo.png",
-    "assets/images/icon.png",
-    "assets/images/android-icon-monochrome.png",
-    "assets/images/android-icon-background.png",
-    "assets/images/react-logo@3x.png",
-    "assets/models/README.md",
-    "assets/models/mlp.pte",
-    "tools/README.md",
-    "tools/export_to_executorch.py",
-    "tools/requirements.txt",
-    "tools/generate_golden_fixtures.py",
+    "tsconfig.json",
+    "BUILD.md",
+    "README.md",
+    "babel.config.js",
+    "metro.config.js",
+    "package.json",
+    "app.json",
     "tools/train_mlp.py",
     "tools/fetch_training_data.py",
-    "tests/unit/featureEngineering.test.ts",
-    "tests/unit/rolling.test.ts",
-    "src/hooks/useOnboardingGate.ts",
-    "src/hooks/useGames.ts",
-    "src/hooks/useGameAnalysis.ts",
-    "src/hooks/useAnalysisLLM.ts",
-    "src/hooks/useTabularModel.ts",
-    "src/components/StatBar.tsx",
-    "src/components/ProbabilityGauge.tsx",
-    "src/components/DisclaimerBanner.tsx",
-    "src/components/ErrorBoundary.tsx",
-    "src/components/RationaleCard.tsx",
-    "src/components/GameCard.tsx",
-    "src/components/ModelDownloadProgress.tsx",
+    "tools/requirements.txt",
+    "tools/README.md",
+    "tools/generate_golden_fixtures.py",
+    "tools/export_to_executorch.py",
     "src/services/featureEngineering.ts",
-    "src/services/balldontlie.ts",
-    "src/services/database.ts",
-    "src/services/inferenceService.ts",
     "src/services/telemetry.ts",
-    "src/constants/model.ts",
-    "src/constants/disclaimers.ts",
-    "src/constants/jurisdictions.ts",
+    "src/services/database.ts",
+    "src/services/balldontlie.ts",
+    "src/services/inferenceService.ts",
+    "src/hooks/useAnalysisLLM.ts",
+    "src/hooks/useGames.ts",
+    "src/hooks/useTabularModel.ts",
+    "src/hooks/useTabularModel.web.ts",
+    "src/hooks/useAnalysisLLM.web.ts",
+    "src/hooks/useOnboardingGate.ts",
+    "src/hooks/useGameAnalysis.ts",
+    "src/types/models.ts",
+    "src/types/domain.ts",
+    "src/types/api.ts",
+    "src/utils/env.ts",
     "src/utils/formatters.ts",
     "src/utils/rolling.ts",
     "src/utils/result.ts",
-    "src/utils/env.ts",
-    "src/types/domain.ts",
-    "src/types/models.ts",
-    "src/types/api.ts",
+    "src/components/DisclaimerBanner.tsx",
+    "src/components/RationaleCard.tsx",
+    "src/components/ErrorBoundary.tsx",
+    "src/components/ProbabilityGauge.tsx",
+    "src/components/ModelDownloadProgress.tsx",
+    "src/components/GameCard.tsx",
+    "src/components/StatBar.tsx",
+    "src/constants/disclaimers.ts",
+    "src/constants/jurisdictions.ts",
+    "src/constants/model.ts",
     "src/stores/predictionStore.ts",
     "src/stores/settingsStore.ts",
     "src/stores/modelStore.ts",
-    "app/_layout.tsx",
+    "assets/icon.png",
+    "assets/models/README.md",
+    "assets/models/mlp.pte",
+    "assets/images/favicon.png",
+    "assets/images/partial-react-logo.png",
+    "assets/images/android-icon-foreground.png",
+    "assets/images/react-logo.png",
+    "assets/images/icon.png",
+    "assets/images/splash-icon.png",
+    "assets/images/android-icon-background.png",
+    "assets/images/android-icon-monochrome.png",
+    "assets/images/react-logo@2x.png",
+    "assets/images/react-logo@3x.png",
+    "tests/unit/rolling.test.ts",
+    "tests/unit/featureEngineering.test.ts",
     "app/onboarding.tsx",
+    "app/_layout.tsx",
     "app/analysis/[gameId].tsx",
-    "app/(tabs)/index.tsx",
-    "app/(tabs)/_layout.tsx",
     "app/(tabs)/history.tsx",
-    "app/(tabs)/settings.tsx"
+    "app/(tabs)/settings.tsx",
+    "app/(tabs)/_layout.tsx",
+    "app/(tabs)/index.tsx",
+    ".vscode/settings.json",
+    ".vscode/extensions.json"
   ],
   "config_files": {
     "app.json": {
@@ -87,7 +89,41 @@
           "image": "./assets/images/splash-icon.png",
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
-        }
+        },
+        "version": "0.1.0",
+        "orientation": "portrait",
+        "scheme": "tminus",
+        "userInterfaceStyle": "automatic",
+        "newArchEnabled": true,
+        "ios": {
+          "supportsTablet": false,
+          "infoPlist": {
+            "ITSAppUsesNonExemptEncryption": false
+          },
+          "config": {
+            "usesNonExemptEncryption": false
+          },
+          "entitlements": {
+            "com.apple.developer.kernel.increased-memory-limit": true,
+            "com.apple.developer.kernel.extended-virtual-addressing": true
+          }
+        },
+        "web": {
+          "favicon": "./assets/images/favicon.png",
+          "bundler": "metro"
+        },
+        "extra": {
+          "router": {}
+        },
+        "plugins": [
+          [
+            "expo-router",
+            {
+              "origin": "https://tminus.one/"
+            }
+          ],
+          "expo-font"
+        ]
       }
     },
     "package.json": {
@@ -173,19 +209,22 @@
           "ios": {
             "simulator": false,
             "resourceClass": "m-medium"
-          }
+          },
+          "credentialsSource": "local"
         },
         "preview": {
           "distribution": "internal",
           "ios": {
             "resourceClass": "m-medium"
-          }
+          },
+          "credentialsSource": "local"
         },
         "production": {
           "autoIncrement": true,
           "ios": {
             "resourceClass": "m-medium"
-          }
+          },
+          "credentialsSource": "local"
         }
       },
       "submit": {
@@ -243,7 +282,9 @@
   "navigation_structure": "Not fully analyzed in this version",
   "permissions": [
     {
-      "ios_infoPlist": {}
+      "ios_infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     }
   ],
   "devDependencies": {

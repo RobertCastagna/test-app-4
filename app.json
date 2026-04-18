@@ -1,16 +1,18 @@
 {
   "expo": {
-    "icon": "./assets/icon.png",
+    "name": "test-app-4",
+    "slug": "test-app-4",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "tminus",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "version": "0.1.0",
-    "orientation": "portrait",
-    "scheme": "tminus",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
       "supportsTablet": false,
       "infoPlist": {
@@ -19,6 +21,7 @@
       "config": {
         "usesNonExemptEncryption": false
       },
+      "bundleIdentifier": "app.tminus.test-app-4",
       "entitlements": {
         "com.apple.developer.kernel.increased-memory-limit": true,
         "com.apple.developer.kernel.extended-virtual-addressing": true
