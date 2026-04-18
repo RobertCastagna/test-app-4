@@ -58,3 +58,7 @@ app-example
 # generated native folders
 /ios
 /android
+
+# iOS Signing Credentials
+credentials.json
+certs/*
